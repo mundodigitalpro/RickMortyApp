@@ -26,6 +26,6 @@ This is a sample Android app written in Kotlin using the Jetpack Compose UI tool
 
 <img src="character_list.png" alt="Character List" width="250"/>
 <img src="character_detail.png" alt="Character Detail" width="250"/>
-![Example GIF](rickmortygif.gif)
+<img src="rickmortygif.gif" alt="Example"/>
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
