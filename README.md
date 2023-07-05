@@ -1,5 +1,7 @@
 # Rick and Morty Character Browser
 
+<img src="rickmortygif.gif" alt="Example"/>
+
 This is a sample Android app written in Kotlin using the Jetpack Compose UI toolkit, and following the modern Android development best practices with the MVVM architecture. The app uses the [Rick and Morty API](https://rickandmortyapi.com/) to display a list of characters, and provides more details when a character is selected.
 
 ## Features
@@ -26,6 +28,6 @@ This is a sample Android app written in Kotlin using the Jetpack Compose UI tool
 
 <img src="character_list.png" alt="Character List" width="250"/>
 <img src="character_detail.png" alt="Character Detail" width="250"/>
-<img src="rickmortygif.gif" alt="Example"/>
+
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
