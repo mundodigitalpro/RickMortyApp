@@ -21,64 +21,6 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.google.accompanist.coil.rememberCoilPainter
 import com.josejordan.rickmortyapp.viewmodel.CharacterDetailViewModel
 
-/*@Composable
-fun CharacterDetailScreen(characterId: Int) {
-    val viewModel: CharacterDetailViewModel = hiltViewModel()
-
-    LaunchedEffect(characterId) {
-        viewModel.fetchCharacterDetail(characterId)
-    }
-
-    val character = viewModel.character.observeAsState(initial = null).value
-
-    // Check if the character data is loaded
-    if (character != null) {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp)
-        ) {
-            Text(text = character.name)
-            Text(text = character.species)
-            // Add more fields as needed
-        }
-    } else {
-        Text(text = "Loading...")
-    }
-}*/
-
-/*@Composable
-fun CharacterDetailScreen(characterId: Int) {
-    val viewModel: CharacterDetailViewModel = hiltViewModel()
-
-    LaunchedEffect(characterId) {
-        viewModel.fetchCharacterDetail(characterId)
-    }
-
-    val character = viewModel.character.observeAsState(initial = null).value
-
-    // Check if the character data is loaded
-    if (character != null) {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp)
-        ) {
-            // Show character image
-            Image(
-                painter = rememberCoilPainter(request = character.image, fadeIn = true),
-                contentDescription = "Character Image",
-                modifier = Modifier.size(200.dp)
-            )
-            Text(text = character.name)
-            Text(text = character.species)
-            // Add more fields as needed
-        }
-    } else {
-        Text(text = "Loading...")
-    }
-}*/
-
 @Composable
 fun CharacterDetailScreen(characterId: Int) {
     val viewModel: CharacterDetailViewModel = hiltViewModel()
