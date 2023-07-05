@@ -3,6 +3,7 @@ package com.josejordan.rickmortyapp.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.josejordan.rickmortyapp.data.Character
 import com.josejordan.rickmortyapp.repository.CharacterRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
@@ -13,7 +14,7 @@ class CharacterDetailViewModel @Inject constructor(
     private val characterRepository: CharacterRepository
 ) : ViewModel() {
 
-    val character = MutableLiveData<com.josejordan.rickmortyapp.data.Character>()
+    val character = MutableLiveData<Character>()
     val error = MutableLiveData<String>()
 
     fun fetchCharacterById(characterId: Int) {

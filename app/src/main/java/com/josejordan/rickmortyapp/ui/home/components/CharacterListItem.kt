@@ -1,6 +1,7 @@
 package com.josejordan.rickmortyapp.ui.home.components
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -28,3 +29,22 @@ fun CharacterListItem(character: Character) {
         Text(text = character.name)
     }
 }
+
+
+/*@Composable
+fun CharacterListItem(character: Character, onItemClick: () -> Unit) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp)
+            .clickable { onItemClick() }
+    ) {
+        Image(
+            painter = rememberCoilPainter(request = character.image),
+            contentDescription = null,
+            modifier = Modifier.fillMaxWidth(),
+            contentScale = ContentScale.Crop
+        )
+        Text(text = character.name)
+    }
+}*/

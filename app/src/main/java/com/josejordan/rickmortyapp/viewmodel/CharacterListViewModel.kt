@@ -36,7 +36,7 @@ class CharacterListViewModel @Inject constructor(
             }
         }
     }*/
-private fun fetchAllCharacters() {
+fun fetchAllCharacters() {
     viewModelScope.launch {
         try {
             val response = characterRepository.getAllCharacters()
