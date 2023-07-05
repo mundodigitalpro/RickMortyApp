@@ -22,20 +22,6 @@ class CharacterListViewModel @Inject constructor(
         fetchAllCharacters()
     }
 
-/*    private fun fetchAllCharacters() {
-        viewModelScope.launch {
-            try {
-                val response = characterRepository.getAllCharacters()
-                if (response.isSuccessful) {
-                    response.body()?.let { characters.postValue(it.results) }
-                } else {
-                    error.postValue("Error: ${response.code()}")
-                }
-            } catch (e: Exception) {
-                error.postValue(e.message)
-            }
-        }
-    }*/
 private fun fetchAllCharacters() {
     viewModelScope.launch {
         try {

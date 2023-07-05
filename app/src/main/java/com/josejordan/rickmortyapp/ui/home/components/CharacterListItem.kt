@@ -1,6 +1,7 @@
 package com.josejordan.rickmortyapp.ui.home.components
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -13,11 +14,12 @@ import com.google.accompanist.coil.rememberCoilPainter
 import com.josejordan.rickmortyapp.data.Character
 
 @Composable
-fun CharacterListItem(character: Character) {
+fun CharacterListItem(character: Character, onClick: (Character) -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
             .padding(16.dp)
+            .clickable { onClick(character) }
     ) {
         Image(
             painter = rememberCoilPainter(request = character.image),
